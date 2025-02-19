@@ -63,7 +63,7 @@
 #endif
 
 /** Attribute to mark large constant arrays, for example for font bitmaps */
-#define LV_ATTRIBUTE_LARGE_CONST
+#define LV_ATTRIBUTE_LARGE_CONST __attribute__((section(".lv_large_const")))
 
 /*=================
  *  TEXT SETTINGS

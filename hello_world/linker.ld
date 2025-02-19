@@ -371,6 +371,7 @@ SECTIONS
 		*(.data)
 		*(".data.*")
 		*(".kernel.*")
+		KEEP(*(.lv_large_const*))
 
 		/* Located in generated directory. This file is populated by the
 		 * zephyr_linker_sources() Cmake function.
